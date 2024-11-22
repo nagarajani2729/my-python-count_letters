@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .content {
+            background-color: #3f5d6e;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 5px;
+            white-space: pre-wrap;  
+            word-wrap: break-word;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Letter Counter</h1>
+    <p>The file <strong>{{ filename }}</strong> contains <strong>{{ letter_count }}</strong> letters.</p>
+    
+    <h2>Content of the file:</h2>
+    <div class="content">
+        <pre>{{ file_content }}</pre>
+    </div>
+</body>
+</html>
